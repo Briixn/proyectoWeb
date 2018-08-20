@@ -1,0 +1,101 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+  <div class="row centrar">
+    <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INGRESAR SOFTWARE</h2>
+    <!--1-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="nombreSoftware">Nombre</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="nombreSoftware">
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="fabricanteSoftware">Fabricante</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="fabricanteSoftware">
+    </div>
+    <!--2-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-2 col-sm-4">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="codigoLicencia">Licenca</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="codigoLicencia">
+    </div>
+    <div class="col-sm-2"></div>
+    <div class="input-group mb-4 col-sm-4">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="arquitectura">Arquitectura</label>
+      </div>
+      <select class="custom-select" id="arquitectura" [(ngModel)]="arquitectura">
+        <option selected>Elegir...</option>
+        <option value="1">x64</option>
+        <option value="2">x32</option>
+      </select>
+    </div>
+
+    <!--3-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="tiempoValidez">Tiempo Validez</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="tiempoValidez">
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="adquisionSoftware">Adquision</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="adquisionSoftware">
+    </div>
+
+    <!--4-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="proveedorSoftware">Proveedor</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="proveedorSoftware">
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="empleadoSoftware">Empleado</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="empleadoSoftware">
+    </div>
+
+    <!--4-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="comentarioSodtware">Comentario</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="comentarioSodtware">
+    </div>
+    <div class="col-sm-1"></div>
+
+
+    <div class="col-sm-12" *ngIf="estado === true">
+      <p style="color: red">* Ingrese todos los Campos</p>
+    </div>
+
+    <div class="col-sm-2"></div>
+    <button type="button" class="btn btn-primary btn-lg btn-block mb-2 col-sm-5" (click)="guardar()">GUARDAR</button>
+
+
+    <div class="col-sm-2"></div>
+    <button type="button" class="btn btn-secondary btn-lg btn-block mb-2 col-sm-5" routerLink="/mostrar-software">CANCELAR</button>
+
+  </div>
+
+</div>

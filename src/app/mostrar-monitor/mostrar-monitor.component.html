@@ -1,0 +1,63 @@
+<app-nav-bar></app-nav-bar>
+<p></p>
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2">
+            <h5>MONITORES</h5>
+        </div>
+        <div class="input-group col-sm-5">
+            <input class="form-control py-2" type="search" placeholder="buscar" id="example-search-input">
+            <span class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button">BUSCAR</button>
+      </span>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+
+</div>
+
+<br>
+
+<dt>
+  <div class="row container-fluid centrar">
+    <div class="col-sm-1 border">Nombre</div>
+    <div class="col-sm-1 border">Tipo</div>
+    <div class="col-sm-2 border">Fabricante</div>
+    <div class="col-sm-2 border">Modelo</div>
+    <div class="col-sm-2 border">Tamaño</div>
+    <div class="col-sm-1 border">N°Serie</div>
+    <div class="col-sm-1 border">N°Inventario</div>
+    <div class="col-sm-2 border">Localizacion</div>
+    <div class="col-sm-1 border">Estado</div>
+    <div class="col-sm-2 border">Adquision</div>
+    <div class="col-sm-2 border">Proveedor</div>
+    <div class="col-sm-2 border">Empleado</div>
+    <div class="col-sm-2 border">Comentario</div>
+  </div>
+</dt>
+
+<div class="row container-fluid centrar" *ngFor="let monitor of monitores">
+  <div class="col-sm-1 border">{{monitor.nombreItem}}</div>
+  <div class="col-sm-1 border">{{monitor.tipo}}</div>
+  <div class="col-sm-2 border">{{monitor.fabricante}}</div>
+  <div class="col-sm-2 border">{{monitor.modelo}}</div>
+  <div class="col-sm-2 border">{{monitor.tamanio}}</div>
+  <div class="col-sm-1 border">{{monitor.numeroSerie}}</div>
+  <div class="col-sm-2 border">{{monitor.numeroInventario}}</div>
+  <div class="col-sm-2 border">{{monitor.localizacion}}</div>
+  <div class="col-sm-2 border">{{monitor.estado}}</div>
+  <div class="col-sm-2 border">{{monitor.anioAdquisicion}}</div>
+  <div class="col-sm-1 border">{{monitor.proveedor}}</div>
+  <div class="col-sm-2 border">{{monitor.empleado}}</div>
+  <div class="col-sm-2 border">{{monitor.comentario}}</div>
+</div>
+
+<br>
+<div class="row">
+    <div class="col-sm-10"></div>
+    <div class="col-sm-2">
+        <button type="button" class="btn btn-outline-primary" routerLink="/ingresar-monitor">Añadir</button>
+    </div>
+</div>

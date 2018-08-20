@@ -1,0 +1,140 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+  <div class="row centrar">
+    <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INGRESAR MONITOR</h2>
+    <!--1-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-2 col-sm-4">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="nombreMonitor">Nombre</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="nombreMonitor">
+    </div>
+    <div class="col-sm-2"></div>
+    <div class="input-group mb-4 col-sm-4">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="tipoMonitor">Tipo</label>
+      </div>
+      <select class="custom-select" id="tipoMonitor" [(ngModel)]="tipoMonitor">
+        <option selected>Elegir...</option>
+        <option value="1">LCD</option>
+        <option value="2">DLC</option>
+      </select>
+    </div>
+
+    <!--2-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-2 col-sm-4">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="fabricanteMonitor">Fabricante</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="fabricanteMonitor">
+    </div>
+    <div class="col-sm-2"></div>
+    <div class="input-group mb-2 col-sm-4">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="modeloMonitor">Modelo</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="modeloMonitor">
+    </div>
+
+    <!--3-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="tamanio">Tamaño</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="tamanio">
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="numeroSerieMonitor">Nº Serie</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="numeroSerieMonitor">
+    </div>
+
+    <!--4-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="numeroInventarioMonitor">Nº Inventario</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="numeroInventarioMonitor">
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="localizacionMonitor">Localizacion</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="localizacionMonitor">
+    </div>
+
+    <!--4-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-4 col-sm-4">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="estadoMonitor">Estado</label>
+      </div>
+      <select class="custom-select" id="estadoMonitor" [(ngModel)]="estadoMonitor">
+        <option selected>Elegir...</option>
+        <option value="1">Activo</option>
+        <option value="2">Baja</option>
+      </select>
+    </div>
+    <div class="col-sm-2"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="adquisicionMonitor">Adquisicion</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="adquisicionMonitor">
+    </div>
+
+    <!--5-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="proveedorMonitor">Proveedor</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="proveedorMonitor">
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="empleadoMonitor">Empleado</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="empleadoMonitor">
+    </div>
+
+    <!--4-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="comentarioMonitor">Comentario</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="comentarioMonitor">
+    </div>
+    <div class="col-sm-1"></div>
+
+
+    <div class="col-sm-12" *ngIf="estado === true">
+      <p style="color: red">* Ingrese todos los Campos</p>
+    </div>
+
+    <div class="col-sm-2"></div>
+    <button type="button" class="btn btn-primary btn-lg btn-block mb-2 col-sm-5" (click)="guardar()">GUARDAR</button>
+
+
+    <div class="col-sm-2"></div>
+    <button type="button" class="btn btn-secondary btn-lg btn-block mb-2 col-sm-5" routerLink="/mostrar-monitor">CANCELAR</button>
+
+  </div>
+
+</div>

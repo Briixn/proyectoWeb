@@ -1,0 +1,61 @@
+<app-nav-bar></app-nav-bar>
+<p></p>
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2">
+            <h5>TECLADOS</h5>
+        </div>
+        <div class="input-group col-sm-5">
+            <input class="form-control py-2" type="search" placeholder="buscar" id="example-search-input">
+            <span class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button">BUSCAR</button>
+      </span>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+
+</div>
+
+<br>
+
+<dt>
+  <div class="row container-fluid centrar">
+    <div class="col-sm-1 border">Nombre</div>
+    <div class="col-sm-1 border">Tipo</div>
+    <div class="col-sm-2 border">Fabricante</div>
+    <div class="col-sm-2 border">Modelo</div>
+    <div class="col-sm-1 border">N°Serie</div>
+    <div class="col-sm-1 border">N°Inventario</div>
+    <div class="col-sm-2 border">Localizacion</div>
+    <div class="col-sm-1 border">Estado</div>
+    <div class="col-sm-2 border">Adquision</div>
+    <div class="col-sm-2 border">Proveedor</div>
+    <div class="col-sm-2 border">Empleado</div>
+    <div class="col-sm-2 border">Comentario</div>
+  </div>
+</dt>
+
+<div class="row container-fluid centrar" *ngFor="let teclado of teclados">
+  <div class="col-sm-1 border">{{teclado.nombreItem}}</div>
+  <div class="col-sm-1 border">{{teclado.tipo}}</div>
+  <div class="col-sm-2 border">{{teclado.fabricante}}</div>
+  <div class="col-sm-2 border">{{teclado.modelo}}</div>
+  <div class="col-sm-1 border">{{teclado.numeroSerie}}</div>
+  <div class="col-sm-2 border">{{teclado.numeroInventario}}</div>
+  <div class="col-sm-2 border">{{teclado.localizacion}}</div>
+  <div class="col-sm-2 border">{{teclado.estado}}</div>
+  <div class="col-sm-2 border">{{teclado.anioAdquisicion}}</div>
+  <div class="col-sm-1 border">{{teclado.proveedor}}</div>
+  <div class="col-sm-2 border">{{teclado.empleado}}</div>
+  <div class="col-sm-2 border">{{teclado.comentario}}</div>
+</div>
+
+<br>
+<div class="row">
+    <div class="col-sm-10"></div>
+    <div class="col-sm-2">
+        <button type="button" class="btn btn-outline-primary" routerLink="/ingresar-teclado">Añadir</button>
+    </div>
+</div>

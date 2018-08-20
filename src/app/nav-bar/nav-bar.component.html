@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
+    <a class="navbar-brand">TIENDITA INFORMATICA</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarInventario" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Inventario
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" routerLink="/mostrar-computadora" routerLinkActive="active">Computadoras</a>
+                  <a class="dropdown-item" routerLink="/mostrar-monitor" routerLinkActive="active">Monitores</a>
+                  <a class="dropdown-item" routerLink="/mostrar-impresora" routerLinkActive="active">Impresoras/Escaner</a>
+                  <a class="dropdown-item" routerLink="/mostrar-teclado" routerLinkActive="active">Teclado/Mouse</a>
+                  <a class="dropdown-item" routerLink="/mostrar-software" routerLinkActive="active">Software</a>
+
+
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarAdmin" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Administración
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Usuarios</a>
+                </div>
+            </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <a class="navbar-brand" routerLink="/login" routerLinkActive="active">LogOut</a>
+        </form>
+    </div>
+</nav>
+
+<router-outlet></router-outlet>
+

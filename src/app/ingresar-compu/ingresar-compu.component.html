@@ -1,0 +1,148 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+  <div class="row centrar">
+    <h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INGRESAR COMPUTADORA</h2>
+    <!--1-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-2 col-sm-4">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="nombreComputadora">Nombre</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="nombreComputadora">
+    </div>
+    <div class="col-sm-2"></div>
+    <div class="input-group mb-4 col-sm-4">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="tipoComputadora">Tipo</label>
+      </div>
+      <select class="custom-select" id="tipoComputadora" [(ngModel)]="tipoComputadora">
+        <option selected>Elegir...</option>
+        <option value="1">LCD</option>
+        <option value="2">DLC</option>
+      </select>
+    </div>
+
+    <!--2-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-2 col-sm-4">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="fabricanteComputadora">Fabricante</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="fabricanteComputadora">
+    </div>
+    <div class="col-sm-2"></div>
+    <div class="input-group mb-2 col-sm-4">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="modeloComputadora">Modelo</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="modeloComputadora">
+    </div>
+
+    <!--3-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="numeroSerieComputadora">Nº Serie</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="numeroSerieComputadora">
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="numeroInventarioComputadora">Nº Inventario</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="numeroInventarioComputadora">
+    </div>
+
+    <!--4-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="localizacionComputadora">Localizacion</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="localizacionComputadora">
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="input-group mb-4 col-sm-4">
+      <div class="input-group-prepend">
+        <label class="input-group-text" for="estadoComputadora">Estado</label>
+      </div>
+      <select class="custom-select" id="estadoComputadora" [(ngModel)]="estadoComputadora">
+        <option selected>Elegir...</option>
+        <option value="1">Activo</option>
+        <option value="2">Baja</option>
+      </select>
+    </div>
+
+    <!--4-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="adquisicionComputadora">Adquisicion</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="adquisicionComputadora">
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="proveedorComputadora">Proveedor</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="proveedorComputadora">
+    </div>
+
+    <!--5-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="ultimoMantenimientoComputadora">Ultimo Mantenimiento</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="ultimoMantenimientoComputadora">
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="ultimaActualizacionComputadora">Ultima Actualizacion</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="ultimaActualizacionComputadora">
+    </div>
+
+
+    <!--4-->
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="empleadoComputadora">Empleado</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="empleadoComputadora">
+    </div>
+    <div class="col-sm-1"></div>
+    <div class="input-group mb-1 col-sm-5">
+      <div class="input-group-prepend">
+        <span class="input-group-text mb-3" id="comentarioComputadora">Comentario</span>
+      </div>
+      <input type="text" class="form-control" placeholder=" " [(ngModel)]="comentarioComputadora">
+    </div>
+
+
+    <div class="col-sm-12" *ngIf="estado === true">
+      <p style="color: red">* Ingrese todos los Campos</p>
+    </div>
+    <div class="col-sm-8"></div>
+
+    <div class="col-sm-2"></div>
+    <button type="button" class="btn btn-primary btn-lg btn-block mb-2 col-sm-5" (click)="guardar()">GUARDAR</button>
+
+
+    <div class="col-sm-2"></div>
+    <button type="button" class="btn btn-secondary btn-lg btn-block mb-2 col-sm-5" routerLink="/mostrar-computadora">CANCELAR</button>
+
+  </div>
+
+</div>
